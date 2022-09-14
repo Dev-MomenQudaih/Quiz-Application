@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=".//css/main.css" />
+    <!-- FontAweome CDN Link for Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="qu-number">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span class="current">5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+      </div>
+    </div>
+    <button class="start">Start Quiz</button>
+    <div class="qus_box">
+      <header>
+        <div class="title">Memo Quiz Application</div>
+        <div class="time_line"></div>
+      </header>
+      <div class="qus">
+        <div class="qus_text">4. What does SQL stand for?</div>
+        <div class="options">
+          <div class="ans">
+            <span>Stylish Question Language</span>
+          </div>
+          <div class="ans false">
+            <span>Stylesheet Query Language</span>
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+          </div>
+          <div class="ans true">
+            <span>Statement Question Language</span>
+            <div class="icon tick"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="ans">
+            <span>Structured Query Language</span>
+          </div>
+        </div>
+      </div>
+      <footer class="foot">
+        <div class="achievement">
+          <span>4</span> of <span>10</span> Questions
+        </div>
+        <button class="next_btn">Next Qus</button>
+      </footer>
+    </div>
+    <script src=".//js/main.js"></script>
+  </body>
+</html>
