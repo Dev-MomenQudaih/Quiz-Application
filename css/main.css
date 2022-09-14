@@ -19,6 +19,7 @@
   position: absolute;
   left: 0;
   top: 0;
+  display: none;
 }
 
 .qu-number span {
@@ -67,6 +68,10 @@
   outline: none;
   border: none;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 .qus_box {
@@ -88,16 +93,17 @@
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
-  /*opacity: 0;
-  */
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  /* display: none; */
+  /* opacity: 0; */
 }
 
 .qus_box header {
   box-shadow: 0px 3px 5px 1px rgb(0 0 0 / 10%);
+  /* position: relative;Z */
 }
 
 .qus_box header .title {
@@ -106,6 +112,14 @@
   margin: 0 auto;
   padding: 20px;
   width: fit-content;
+}
+
+.qus_box .time_line {
+  position: absolute;
+  left: 0;
+
+  height: 2px;
+  width: 40%;
 }
 
 .qus_box .qus {
