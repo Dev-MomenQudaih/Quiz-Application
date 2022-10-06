@@ -183,7 +183,7 @@ startBtn.onclick = function addqu() {
           You've completed the Quiz! <br />
           and ${
             result > 5 ? "excellent 😍" : "sorry 😐"
-          } , You got ${result} out of 5
+          } , You got ${result} out of ${qusetionsNumber}
         </div>
         <div class="btns">
           <button class="replay">Replay Quiz</button>
