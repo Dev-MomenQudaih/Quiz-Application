@@ -236,16 +236,16 @@ startBtn.onclick = function addqu() {
   }
 
   function startTimeLine(co) {
-    LineCounter = setInterval(Ltimer, 24);
+    LineCounter = setInterval(Ltimer, 160);
     function Ltimer() {
-      if (co < 659 && selectV == false) {
+      if (co < 100 && selectV == false) {
         co += 1;
       }
-      time_line.style.width = `${co}px`;
-      if (co > 540) {
+      time_line.style.width = `${co}%`;
+      if (co > 80) {
         time_line.style.backgroundColor = "red";
       }
-      if (co == 659) {
+      if (co == 99) {
         clearInterval(LineCounter);
       }
     }

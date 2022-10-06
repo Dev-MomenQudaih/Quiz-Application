@@ -194,6 +194,7 @@
   -moz-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
+  max-width: 100%;
 }
 
 .qus_box .qus {
