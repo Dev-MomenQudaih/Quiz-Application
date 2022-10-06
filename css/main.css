@@ -18,11 +18,11 @@
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
+  transition: 2s ease;
+  -webkit-transition: 2s ease;
+  -moz-transition: 2s ease;
+  -ms-transition: 2s ease;
+  -o-transition: 2s ease;
   user-select: none;
 }
 
@@ -123,7 +123,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 550px;
+  width: 660px;
   transform: translate(-50%, -60%);
   -webkit-transform: translate(-50%, -60%);
   -moz-transform: translate(-50%, -60%);
@@ -180,9 +180,7 @@
 .qus_box header .title {
   font-size: 20px;
   font-weight: 600;
-  /* margin: 0 auto; */
-
-  /* width: fit-content; */
+  user-select: none;
 }
 
 .qus_box .time_line {
@@ -190,7 +188,6 @@
   left: 0;
   bottom: 0;
   height: 4px;
-  width: 20%;
   background-color: #007bff;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
@@ -208,6 +205,7 @@
 .qus .qus_text {
   font-size: 25px;
   font-weight: 600;
+  user-select: none;
 }
 
 .qus .options {
@@ -227,6 +225,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  user-select: none;
 }
 
 .qus .options .ans:hover {
@@ -267,6 +266,10 @@
   border: 1px solid #f5c6cb;
 }
 
+.qus .options .ans.disabled {
+  pointer-events: none;
+}
+
 .qus .options .ans .icon {
   height: 26px;
   width: 26px;
@@ -298,6 +301,7 @@
   align-items: center;
   padding: 12px 30px;
   border-top: 1px solid lightgrey;
+  user-select: none;
 }
 
 .qus_box footer .next_btn {
@@ -318,6 +322,7 @@
   -moz-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
+  user-select: none;
 }
 
 .qus_box footer .next_btn:hover {
@@ -425,7 +430,6 @@
   cursor: pointer;
   padding: 10px 20px;
   outline: none;
-  /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%); */
   user-select: none;
   margin-right: 17px;
 }
